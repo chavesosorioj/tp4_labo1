@@ -283,7 +283,7 @@ int ll_clear(LinkedList *this) {
 
 	if (this != NULL) {
 		len = ll_len(this);
-		for (i = 0; i < len; i++) {
+		for (i = len; i >0; i--) {
 			ll_remove(this, i);
 		}
 		this->pFirstNode = NULL;
